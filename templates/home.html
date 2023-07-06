@@ -1,0 +1,51 @@
+<html>
+<head><title>Home</title>
+<style>
+   
+  
+    .container {
+        text-align: center;
+        margin-top: 200px;
+      }
+      
+      h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      
+      .button {
+        display: flex;
+        justify-content: center;
+      }
+      
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background-color: #4caf50;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+      
+      a:hover {
+        background-color: #45a049;
+      }
+      
+</style>
+</head>
+{% block content%}
+<body>
+<div class='container'>
+    <h1>Welcome to the Home Page</h1>
+
+<div class='button'>
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'singup' %}">Sing up</a>
+</div>
+</div>
+
+</body>{% endblock %}
+
+</html>
